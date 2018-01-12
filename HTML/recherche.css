@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+/* HEADER */
+#header {
+	display: block;
+	background-color: gold;
+	margin: 0 0 3em 0;
+	table-layout: fixed;
+	overflow: hidden;
+}
+header h1 {
+	color: navy;
+	margin-left: 0%;
+	position: relative;
+	-moz-animation-name: hello;
+	-moz-animation-timing-function: linear;
+	-moz-animation-duration: 10s;
+	-moz-animation-iteration-count: infinite;
+	white-space: nowrap;
+}
+@-moz-keyframes hello {
+	0%, 100% {margin-left: -30%;}
+	99.99% {margin-left: 100%;}
+}
+
+
+/* BODY */
+@media print {
+	nav, footer {
+	display: none;}
+}
+
+svg {
+	-moz-animation: clignote 2s infinite;
+}
+nav li:hover {
+	opacity: 1;
+	color: green;
+}
+
+@-moz-keyframes clignote {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* CLOCK */
+#clock {
+	width: 250px;
+	height: 250px;
+}
+#clock #clock-container{
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10px 10px;
+	background: #fff url("./ios_clock.svg") no-repeat center;
+	border-radius: 50%;
+	background-size: 88%;
+	height: 200px;
+	position: relative;
+	width: 200px;
+}
+.hour {
+	background-color: black;
+	height: 25%;
+	left: 48.75%;
+  	position: absolute;
+	top: 25%;
+  	transform-origin: 50% 100%;
+  	width: 3%;
+  	animation: tic-tac 720s infinite linear;
+  	
+}
+.min {
+	background-color: black;
+	height: 40%;
+	left: 48.75%;
+  	position: absolute;
+	top: 10%;
+  	transform-origin: 50% 100%;
+  	width: 1.5%;
+  	animation: tic-tac 60s infinite steps(60);
+}
+.sec {
+	background-color: red;
+	height: 40%;
+	left: 48.75%;
+  	position: absolute;
+	top: 10%;
+  	transform-origin: 50% 100%;
+  	width: 1%;
+  	animation: tic-tac 1s infinite steps(60);
+}
+@-moz-keyframes tic-tac {
+	100% {-moz-transform: rotateZ(360deg);}
+}
+
+/* TABLEAU */
+#tableau tr {
+	transition: font, font-size 2s;
+}
+#tableau tr.bigle:hover {
+	font: bold;
+	font-size: 40px;
+}
+.titre:after {
+	content: '\0000a9';
+}
+
+/* FOOTER */
+footer p:before {
+	content: '\0000a9';
+}

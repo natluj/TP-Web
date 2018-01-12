@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CSS</title>
+<link rel="stylesheet" href="recherche.css">
+</head>
+<body>
+	<header>
+		<div id="header">
+			<h1>Hello World !!</h1>
+		</div>
+	</header>
+
+	<div id="menu">
+		<svg width="500" height="200">
+			<circle cx="100" cy="100" r="80" fill="blue">
+			<animate dur="3s" attributeName="r" values="100;20;100"
+				repeatCount="indefinite" /></circle>
+			<circle cx="150" cy="100" r="80" fill="yellow">
+			<animate dur="4s" attributeName="r" values="100;40;100"
+				repeatCount="indefinite" /></circle>
+			<circle cx="200" cy="100" r="80" fill="red">
+			<animate dur="6s" attributeName="r" values="100;50;100"
+				repeatCount="indefinite" /></circle>
+			<polygon points="30,75 30,125 280,100"
+				style="fill:white;stroke:black;stroke-width:1">
+			<animate dur="5s" attributeName="points"
+				values="30,75 30,125 280,100;200,75 200,125 450,100;30,75 30,125 280,100"
+				repeatCount="indefinite" /></polygon>
+		</svg>
+		<nav>
+			<ol>
+				<li><a href="./article.html">Home</a></li>
+				<li><a href="./login.html">Login</a></li>
+				<li><a href="./adherent.html">Register</a></li>
+			</ol>
+		</nav>
+		<article id="clock">
+			<!-- <svg width="250" height="250">
+				<circle cx="110" cy="110" r="100" stroke="black" fill="none"/>
+			</svg> -->
+			<div id="clock-container">
+				<div class="hour"></div>
+				<div class="min"></div>
+				<div class="sec"></div>
+			</div>
+		</article>
+
+	</div>
+
+	<div>
+		<form action="contact" name="form">
+			Titre <input type="text" name="titre" id="titre"
+				placeholder="Mon titre..."><br> Categorie <select><option>Journal</option>
+				<option>Web</option>
+				<option>TV</option></select>
+		</form>
+
+		<table border="1px" name="tableau" id="tableau">
+			<tr>
+				<td>Titre</td>
+				<td>Cat&eacutegorie</td>
+				<td>Auteur</td>
+			</tr>
+			<tr class="bigle">
+				<td class="titre">L'histoire de la vie</td>
+				<td class="journal">Journal</td>
+				<td>sir Caleb JOSEPH</td>
+			</tr>
+			<tr class="bigle">
+				<td class="titre">Star Wars & moi</td>
+				<td class="web">Web</td>
+				<td>Julien</td>
+			</tr>
+			<tr class="bigle">
+				<td class="titre">Java, enfin</td>
+				<td class="tv">TV</td>
+				<td>J&eacuter&eacutemy & J&eacuterome</td>
+			</tr>
+		</table>
+
+		<div class="bowling" width="" height="">
+			<div>
+				<svg>
+					<circle class="quille" id="q1" cx="30px" cy="30px" r="10px" stroke="black" fill="white" />
+					<circle class="quille" id="q2" cx="50px" cy="30px" r="10px" stroke="black" fill="white" />
+					<circle class="quille" id="q3" cx="70px" cy="30px" r="10px" stroke="black" fill="white" />
+					<circle class="quille" id="q4" cx="40px" cy="50px" r="10px" stroke="black" fill="white" />
+					<circle class="quille" id="q5" cx="60px" cy="50px" r="10px" stroke="black" fill="white" />
+					<circle class="quille" id="q6" cx="50px" cy="70px" r="10px" stroke="black" fill="white" />
+				</svg>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<img alt=""
+			src="https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjO-Y339ZrYAhXFPRQKHWLSC4oQjBwIBA&url=https%3A%2F%2Fwww.alittlebityummy.com%2Fassets%2FLow-FODMAP-Blog-Photos%2F_resampled%2FCroppedFocusedImageWyI4NTAiLCI1MDAiLCI1MC01MCJd%2FLow-FODMAP-Tomato-Ketchup.jpg&psig=AOvVaw1kQD0bwGuMwhgXQT1lv2y3&ust=1513939406378142">
+		<p>Tomato-ketchup Corp.</p>
+	</footer>
+</body>
+</html>

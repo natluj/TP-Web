@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Accueil</title>
+<link rel="stylesheet" href="recherche.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 class="col-sm-offset-1">La Tomato-Ketchup Corp. vous
+				souhaite la bienvenue.</h1>
+		</header>
+
+		<ul class="nav nav-pills col-sm-offset-3">
+			<li data-toggle="tooltip" data-placement="bootom" title="Tooltip on left"><a href="./article.html">Home</a></li>
+			<li><a href="./login.html">Login</a></li>
+			<li><a href="./adherent.html">Register</a></li>
+			<li><a href="./article.html">Articles</a></li>
+			<li><a href="./recherche.html">Recherche</a></li>
+		</ul>
+		<div>
+			<div class="col-sm-offset-1 col-sm-6">
+				<svg width="500" height="200">
+			<circle cx="100" cy="100" r="80" fill="blue">
+			<animate dur="3s" attributeName="r" values="100;20;100"
+						repeatCount="indefinite" /></circle>
+			<circle cx="150" cy="100" r="80" fill="yellow">
+			<animate dur="4s" attributeName="r" values="100;40;100"
+						repeatCount="indefinite" /></circle>
+			<circle cx="200" cy="100" r="80" fill="red">
+			<animate dur="6s" attributeName="r" values="100;50;100"
+						repeatCount="indefinite" /></circle>
+			<polygon points="30,75 30,125 280,100"
+						style="fill:white;stroke:black;stroke-width:1">
+			<animate dur="5s" attributeName="points"
+						values="30,75 30,125 280,100;200,75 200,125 450,100;30,75 30,125 280,100"
+						repeatCount="indefinite" /></polygon>
+		</svg>
+			</div>
+			<div class="col-sm-4" >
+				<article id="clock" data-toggle="tooltip" data-placement="top" title="Tooltip on left">
+					<!-- <svg width="250" height="250">
+				<circle cx="110" cy="110" r="100" stroke="black" fill="none"/>
+			</svg> -->
+					<div id="clock-container">
+						<div class="hour"></div>
+						<div class="min"></div>
+						<div class="sec"></div>
+					</div>
+				</article>
+			</div>
+		</div>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+	</div>
+	<footer class="col-sm-12">
+		<p class="alert-info text-center">Tomato-ketchup Corp.</p>
+	</footer>
+</body>
+</html>

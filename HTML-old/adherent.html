@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+	<main>
+	<form action="register" method="POST">
+		<p>
+			Nom <input type="text" name="nom" id="nom">
+		</p>
+		<p>
+			Prenom <input type="text" name="prenom" id="prenom">
+		</p>
+		<p>
+			Date de naissance <input type="date" name="date" id="date">
+		</p>
+		<p>
+			Age <input type="text" name="age" id="age" value=""
+				disabled="disabled">
+		</p>
+		<p>
+			Email <input type="email" name="email" id="email">
+		</p>
+		<p>
+			Adresse <input type="text" name="adresse" id="adresse">
+		</p>
+		<p>
+			Code Postal <input type="text" name="cp" id="cp" size="6">
+		</p>
+		<p>
+			Ville <input type="text" name="ville" id="ville" size="14">
+		</p>
+		<p>
+			Sexe <input type="radio" name="sexe" id="sexe" value="male">M
+			<input type="radio" name="sexe" id="sexe" value="female">F <input
+				type="radio" name="sexe" id="sexe" value="other">Other
+		</p>
+		<p>
+			A jour cotisation <input type="checkbox" name="cotisation"
+				id="cotisation" value="oui">
+		</p>
+		<input type="submit" value="Register" action="./login.html">
+
+	</form>
+	</main>
+</body>
+</html>

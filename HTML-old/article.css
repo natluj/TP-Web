@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+header {
+	border: 2px;
+}
+
+header h1 {
+	animation-name: hello;
+	animation-duration: 5s;
+}
+
+@keyframe hello {
+	0% {left:0%;}
+	100% {left:100%;}
+}

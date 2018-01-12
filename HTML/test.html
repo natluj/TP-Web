@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>test test</title>
+<style>
+.mult2 {
+	color: blue;
+}
+
+.mult3 {
+	color: purple;
+}
+
+.mult2.mult3 {
+	color: red;
+}
+
+div ul li#id1 {
+	font-weight: bold;
+}
+li:before {content:"Le mega ";}
+</style>
+</head>
+<body>
+	<div>
+		<h1>Liste</h1>
+		<ul class="list">
+			<li id="id1">Objet 1</li>
+			<li id="id2" class="mult2">Objet 2</li>
+			<li id="id3" class="mult3">Objet 3</li>
+		</ul>
+		<ul>
+			<li id="id4" class="mult2">Objet 4</li>
+			<li id="id5">Objet 5</li>
+			<li id="id6" class="mult2 mult3">Objet 6</li>
+		</ul>
+	</div>
+</body>
+</html>
